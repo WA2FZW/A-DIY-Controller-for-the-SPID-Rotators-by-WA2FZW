@@ -9,3 +9,5 @@ The software can be compiled for either the EL/AZ or AZ only configurations. The
 The hardware consists of the processor, a PCB for the controller itself, A power supply PCB and a switch panel. The power supply can be configured for either 12 or 15 volts.
 
 I haven't priced it out in detail, but the total cost to build it is probably $200 or less; much cheaper than some of the commercially available controllers for the SPID rotators.
+
+July 2, 2025 - Fixed a minor bug (I think) that was causing gibberish on the display when the motor power supply was turned on while connected to the computer via the USB connection.
