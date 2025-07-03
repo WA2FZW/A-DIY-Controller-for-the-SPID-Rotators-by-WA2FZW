@@ -550,20 +550,12 @@ void loop ()
 
 		lcdDisplay.setBacklight ( true );			// Turn the display backlight on
 
-		LCDPrint ( 1, helloString );				// We're on the air!
-		LCDPrint ( 2, headerString );				// Display header fields
-		LCDPrint ( 3, azHeader );
-		if ( ELEVATION )
-			LCDPrint ( 4, elHeader);				// Only if elevation type rotator
-
-		tgtAzChanged   = true;						// Force update of all the numbers
-		tgtElChanged   = true;
-		curAzChanged   = true;
-		curElChanged   = true;
-
-		UpdateNumbers ();
+		delay ( 250 );								// Just for kicks
+		
+		helloMsg = false;							// Force header re-display
+		SayHello ();								// Display headers
 	}
-
+ 
 
 /*
  *	First, we need to check to see if the operator is trying to initiate a change of
